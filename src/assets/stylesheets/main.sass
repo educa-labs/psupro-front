@@ -1,0 +1,105 @@
+@import 'font'
+@import 'color'
+@import 'mixin'
+@import 'media'
+@import 'shadow'
+
+a
+  text-decoration: none
+
+  color: $c-white
+
+body
+  overflow-x: hidden
+
+  margin: 0
+  padding: 0
+
+  color: $c-white
+
+  font-family: 'Roboto' !important
+
+button
+  padding: 0
+
+  cursor: pointer
+
+  border: none
+  outline: none
+  background: none
+
+  font-family: 'Roboto'
+
+  @include d-flex(center, center)
+
+section > .title
+  margin: 0 0 0
+  padding: .75rem 1rem
+
+  color: c-gray(600)
+  background-color: c-gray(100)
+
+  font-size: $f-medium
+  font-weight: 500
+
+section > .content
+  color: c-gray(600)
+  background-color: $c-white
+
+input
+  box-sizing: border-box
+  width: 100%
+  min-width: 0
+
+  border: none
+  outline: none
+  background: none
+
+  font-size: $f-medium
+
+  &::placeholder
+    color: c-gray(600)
+
+p
+  margin: 0
+
+table
+  width: 100%
+
+  border-spacing: 0
+
+  td
+    padding: .75rem 1rem
+
+    color: $c-black
+  
+  td.key
+    width: 50%
+
+  td.value
+    font-weight: 300
+
+  td.undefined
+    color: c-gray(500)
+
+ul
+  margin: 0
+  padding: 0
+
+  list-style: none
+
+.card
+  overflow: hidden
+
+  @include canvas
+
+  .card-content
+    padding: 1rem
+
+.empty
+  padding-top: 2rem
+  padding-bottom: 2rem
+
+  text-align: center
+
+  color: c-gray(600)
