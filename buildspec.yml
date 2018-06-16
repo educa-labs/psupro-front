@@ -29,7 +29,9 @@ phases:
 artifacts:
   files:
     - index.html
-    - dist
+    - dist/build.js
+    - dist/build.js.map
+    - dist/logo.svg
   #discard-paths: yes
   #base-directory: location
 #cache:
