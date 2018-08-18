@@ -7,7 +7,7 @@ Vue.use(VueResource);
 import preprocessors from './preprocessors';
 
 const API = {
-  url: 'http://staging.6wdpyqr2pm.sa-east-1.elasticbeanstalk.com',
+  url: 'https://api.infopsu.com',
 
   careers(id, config) {
     return new Promise((resolve, reject) => {

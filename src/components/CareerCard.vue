@@ -27,6 +27,14 @@ export default {
 <style lang="sass" scoped>
 @import './../assets/stylesheets/main'
 
+.career-card
+  transition: all .3s cubic-bezier(0.250, 0.460, 0.450, 0.940)
+
+  &:hover
+    transform: scale(.99)
+
+    box-shadow: unset
+
 .career-card > .card-content
   @include d-flex(center)
 
