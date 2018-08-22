@@ -60,15 +60,19 @@ $logo-offset-height: 66px
 
   @include d-flex(center, unset)
 
+  &::after
+    content: ''
+
+    opacity: .4
+
+    background-image: url('./../../assets/images/pattern.svg')
+    background-size: 33%
+
+    @include p-absolute(null, 0, 0, 0, 0)
+
   @include media-down(md)
     &::after
-      content: ''
-
-      opacity: .5
-
-      background-image: url('./../../assets/images/pattern.svg')
-
-      @include p-absolute(null, 0, 0, 0, 0)
+      background-size: 120%
 
 .hero-wrapper > .hero > .hero-content
   flex-direction: column
